@@ -16,7 +16,6 @@ class UsersController extends Controller
     }
     public function show(User $user)
     {
-        dump(Auth::user()->name);exit;
         return view('users.show', compact('user'));
     }
 
